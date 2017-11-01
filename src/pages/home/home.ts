@@ -22,12 +22,18 @@ export class HomePage {
   }
 
 
-  // Add Task
+  
+  private addTask() {
 
+  }
 
-  // Edit Task
+  
+  private editTask() {
 
+  }
 
-  // Delete Task
+  
+  private deleteTask() {
 
+  }
 }
