@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { NavController } from 'ionic-angular';
+import { Task } from './task';
 
 @Component({
   selector: 'page-home',
@@ -7,8 +8,26 @@ import { NavController } from 'ionic-angular';
 })
 export class HomePage {
 
-  constructor(public navCtrl: NavController) {
+  public tasks: Task[];
 
+  constructor(public navCtrl: NavController) {
+    this.tasks = [
+      {id: 1, title: 'Wash the dishes', isDone: false, isEdit: false},
+      {id: 2, title: 'Call Mommy', isDone: false, isEdit: false},
+      {id: 3, title: 'Train at Tutorials Dojo', isDone: false, isEdit: false}
+    ];
+    
+   console.log('Task amount:' + this.tasks.length);
+    
   }
+
+
+  // Add Task
+
+
+  // Edit Task
+
+
+  // Delete Task
 
 }
