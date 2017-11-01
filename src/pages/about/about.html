@@ -7,12 +7,18 @@
 <ion-header>
 
   <ion-navbar>
-    <ion-title>about</ion-title>
+      <button ion-button menuToggle>
+          <ion-icon name="menu"></ion-icon>
+        </button>
+    <ion-title>About</ion-title>
   </ion-navbar>
 
 </ion-header>
 
 
 <ion-content padding>
+<p>
+  <button ion-button color="danger" (click)="sayHello()">Hello World</button>
+</p>
 
 </ion-content>
