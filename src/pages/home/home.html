@@ -20,11 +20,12 @@
       <ion-item no-lines>
         <ion-checkbox></ion-checkbox>
         <ion-item no-lines item-left text-wrap>
-          <ion-label>{{task.title}}</ion-label>
+          <ion-label *ngIf="!task.isEdit" color='primary'>{{task.title}}</ion-label>
+          <ion-input *ngIf="task.isEdit" [(ngModel)]="task.title" (keyup.enter)='task.isEdit=false'></ion-input>
         </ion-item>
       </ion-item>
       <ion-item-options side="left">
-        <button ion-button item-right>
+        <button ion-button item-right (click)='editTask(task)'>
           <ion-icon name="ios-create"></ion-icon>
         </button>
       </ion-item-options>
