@@ -28,6 +28,7 @@ export class HomePage {
   private addTask(title) {
 
     if(title) {
+      console.log('New Task ID: ' + this.tasks.length)
       this.tasks.push(new Task(title));
     }
 
@@ -37,11 +38,13 @@ export class HomePage {
 
   private editTask(task) {
      task.isEdit = !task.isEdit
+    console.log("Editing Task ID: " + task.id);
      this.list.closeSlidingItems();
   }
 
 
   private deleteTask(id) {
+    console.log('Delete item with ID: ' + id);
     this.tasks.splice(id,1);
   }
 }
