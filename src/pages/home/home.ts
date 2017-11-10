@@ -16,24 +16,29 @@ export class HomePage {
       {id: 2, title: 'Call Mommy', isDone: false, isEdit: false},
       {id: 3, title: 'Train at Tutorials Dojo', isDone: false, isEdit: false}
     ];
-    
+
    console.log('Task amount:' + this.tasks.length);
-    
-  }
-
-
-  
-  private addTask() {
 
   }
 
-  
-  private editTask() {
+
+
+  private addTask(title) {
+
+    if(title) {
+      this.tasks.push(new Task(title));
+    }
+
 
   }
 
-  
-  private deleteTask() {
 
+  private editTask(task) {
+
+  }
+
+
+  private deleteTask(id) {
+    this.tasks.splice(id,1);
   }
 }
