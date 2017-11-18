@@ -18,6 +18,7 @@ export class HttpTestComponent {
 
   getData: string;
   postData: string;
+  errorMsg: string;
   headers: Headers;
   
 
@@ -33,7 +34,8 @@ export class HttpTestComponent {
   onTestGet() {
     this.apiService.getCurrentTime().subscribe(
       data => this.getData = JSON.stringify(data),
-      error => this.getData = error,
+      error => { this.getData= error.status; 
+       },
       () => console.log("Finished request!") 
     );
   }
