@@ -7,10 +7,14 @@ import { HomePage } from '../pages/home/home';
 import { AboutPage } from '../pages/about/about';
 import { ViewPersonPage } from '../pages/view-person/view-person';
 import { EditPersonPage } from '../pages/edit-person/edit-person';
+import { RestfulPage} from '../pages/restful/restful';
 
 import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen';
 import { PersonProvider } from '../providers/person/person';
+
+import { HttpTestComponent } from '../components/http-test/http-test'
+
 
 @NgModule({
   declarations: [
@@ -18,9 +22,10 @@ import { PersonProvider } from '../providers/person/person';
     HomePage,
     AboutPage,
     ViewPersonPage,
+    RestfulPage,
+    HttpTestComponent
     
   
-    
   ],
   imports: [
     BrowserModule,
@@ -34,6 +39,7 @@ import { PersonProvider } from '../providers/person/person';
     HomePage,
     AboutPage,
     ViewPersonPage,
+    RestfulPage
     
     
   ],

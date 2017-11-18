@@ -4,6 +4,7 @@ import { StatusBar } from '@ionic-native/status-bar';
 import { SplashScreen } from '@ionic-native/splash-screen'; 
 import { HomePage } from '../pages/home/home';
 import { AboutPage } from '../pages/about/about';
+import { RestfulPage } from '../pages/restful/restful'
 import { ViewPersonPage } from '../pages/view-person/view-person';
 
 
@@ -24,7 +25,8 @@ export class MyApp {
     this.pages = [
       { title: 'Home', component: HomePage },
       { title: 'About', component: AboutPage},
-      { title: 'Persons', component: ViewPersonPage}
+      { title: 'Persons', component: ViewPersonPage},
+      { title: 'Api', component: RestfulPage}
     ];
 
   }
