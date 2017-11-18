@@ -14,6 +14,7 @@ import { SplashScreen } from '@ionic-native/splash-screen';
 import { PersonProvider } from '../providers/person/person';
 
 import { HttpTestComponent } from '../components/http-test/http-test'
+import { HttpServiceProvider } from '../providers/http-service/http-service';
 
 
 @NgModule({
@@ -47,7 +48,8 @@ import { HttpTestComponent } from '../components/http-test/http-test'
     StatusBar,
     SplashScreen,
     {provide: ErrorHandler, useClass: IonicErrorHandler},
-    PersonProvider
+    PersonProvider,
+    HttpServiceProvider
   ]
 })
 export class AppModule {}
