@@ -8,6 +8,7 @@ import { RestfulPage } from '../pages/restful/restful'
 import { ViewPersonPage } from '../pages/view-person/view-person';
 
 
+
 @Component({
   templateUrl: 'app.html'
 })
